@@ -6006,6 +6006,8 @@ domain Network
       integer dataLength
       # Actual bytes received (might be less than dataLength for compressed encodings).
       integer encodedDataLength
+      # Data that was received. (Encoded as a base64 string when passed over JSON)
+      string data
 
   # Fired when EventSource message is received.
   event eventSourceMessageReceived
